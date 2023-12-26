@@ -1,0 +1,13 @@
+.navbar {
+    background-color: rgb(160, 198, 137);
+}
+
+.navbar-nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+}
