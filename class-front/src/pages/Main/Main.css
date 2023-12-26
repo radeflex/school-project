@@ -1,4 +1,21 @@
 .main {
     margin: 15%;
     margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.m-info {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 12em;
+    width: 50%;
+}
+
+.m-btn {
+    padding: 30px;
 }

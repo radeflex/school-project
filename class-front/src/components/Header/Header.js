@@ -1,6 +1,7 @@
 import "./Header.css"
 import {Nav, NavDropdown, Navbar} from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
+import classes from "../../helpers/data"
 
 const Header = () => {
     const nav = useNavigate()
@@ -10,7 +11,7 @@ const Header = () => {
         <Nav>
             <Nav.Link onClick={() => nav("/")}>Главная</Nav.Link>
             <NavDropdown title="Классы">
-                {/* <NavDropdown.Item onClick={() => nav("/11Б")}>11Б</NavDropdown.Item> */}
+                {classes.map(el => <NavDropdown.Item onClick={() => nav("/" + el.title)}>{el.title}</NavDropdown.Item>)}
             </NavDropdown>
         </Nav>
     </Navbar>
